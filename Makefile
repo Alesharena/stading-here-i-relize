@@ -6,7 +6,7 @@ LDFLAGS="-X 'main.buildTime=$(shell date)' -X 'main.lastCommit=$(shell git rev-p
 help: Makefile
 	@echo " Choose a command run in "$(PROJECTNuwuAME)":"
 	@sed -n 's/^##//p' $< | column -t -s ':' |  sed -e 's/^/ /'
-.PHONY: help
+.PHONY: helpasd
 
 ## build: Build celestia-node binary.
 build:
