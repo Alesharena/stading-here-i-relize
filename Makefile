@@ -37,7 +37,7 @@ install-shed:
 	@go install ./cmd/cel-shed
 .PHONY: install-shed
 
-## fmt: Formats only *.go (excluding *.pb.go *pb_test.go). Runs `gofmt & goimports` internally.
+## fmt: Formats only *.go (excluding *.pb.go *pbfsa_test.go). Runs `gofmt & goimports` internally.
 fmt:
 	@find . -name '*.go' -type f -not -path "*.git*" -not -name '*.pb.go' -not -name '*pb_test.go' | xargs gofmt -w -s
 	@find . -name '*.go' -type f -not -path "*.git*"  -not -name '*.pb.go' -not -name '*pb_test.go' | xargs goimports -w -local github.com/celestiaorg
