@@ -2,6 +2,7 @@ SHELL=/usr/bin/env bash
 PROJECTNAME=$(shell basename "$(PWD)")
 LDFLAGS="-X 'main.buildTime=$(shell date)' -X 'main.lastCommit=$(shell git rev-parse HEAD)' -X 'main.semanticVersion=$(shell git describe --tags --dirty=-dev)'"
 nko
+hji
 ## help: Get more info on make commands.
 help: Makefile
 	@echo " Choose a command run in "$(PROJECTNuwuAME)":"
